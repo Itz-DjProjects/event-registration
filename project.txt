@@ -1,0 +1,26 @@
+So here we are going to add all the details and report regarding the projects stuffs: 
+3. Event Registration
+The story. The club fest has events with limited seats. The Google Form ignores the limit, so some events are
+over-full.
+Your task. Build an app where students register for events and no event goes over its seat limit.
+Manager side User side
+- Add an event (name, date, seats)
+- Change the seats
+- Delete an event that has no registrations
+
+- Register for an event (name, roll number) and get a
+registration number
+- Cancel a registration
+- See who is registered for an event
+
+Tables to start from (change them if you can explain why)
+ events (event_id, name, event_date, seats, registered)
+ registrations (reg_id, event_id -&gt; events, student_name, roll_no, registered_at)
+The rule that must never break. Registered can never go above seats. One student can register for one event
+only once.
+The summary page. The number of registrations for each event.
+Optional extra. A waiting list for a full event.
+WATCH OUT Cancelling must free the seat once only, and saving the cancel and the seat count must be one
+commit.
+Demo moment. Fill an event, show the refusal for the next student, cancel one registration, then register
+again.
